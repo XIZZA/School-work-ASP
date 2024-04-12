@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITSAD KENYA</title>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/> 
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<nav id="navbar">
+    <img src="images/logo.JPG" alt=""> 
+    <div class="navigation">
+    <ul>
+        <i id="menu-close" class="fa fa-times"></i>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <img id="menu-btn" src="images/download.jpg" alt="">
+    </div> 
+</nav> 
+
+
+<section id="blog-container">
+<div class="blogs">
+
+    <div class="post">
+        <img src="images/work.jpg" alt="">
+            <h4>1. Threat Modeling and Risk Assessment:</h4>
+            <ul>
+                <li> AITSAD incorporates AI algorithms to analyze historical and real-time data to identify potential threats.</li>
+                <li>Machine Learning models continuously learn from new threat patterns, enabling AITSAD to adapt and proactively assess risks.</li>
+            </ul>
+        </div>
+        <div class="post">
+            <img src="images/nist.png" alt="">
+            <h4>2. Blueprint Generation:</h4>
+            <ul>
+                <li> AITSAD employs algorithms to analyze an organization's IT environment and generate customized security blueprints.</li>
+                <li> Models refine blueprint generation by learning from different organizational structures, industry-specific requirements, and evolving technology landscapes.</li>
+            </ul>
+        </div>
+        <div class="post">
+            <img src="images/post.jpg" alt="">
+            <h4>3. Continuous Monitoring:</h4>
+            <ul>
+                <li>AITSAD integrates monitoring systems to analyze system logs, network traffic, and user behavior for anomaly detection.</li>
+                <li>Identify patterns indicative of security incidents, enhancing the system's ability to recognize and respond to emerging threats.</li>
+            </ul>
+        </div>
+        <div class="post">
+            <img src="images/mg.jpg" alt="">
+            <h4>4. Adaptive Security Measures:</h4>
+            <ul>
+                <li>AITSAD utilizes the effectiveness of existing security measures and adaptively optimize security postures.</li>
+                <li>Continuously evaluate the success of implemented security strategies and recommend adjustments based on evolving threat scenarios.</li>
+            </ul>
+        </div>
+        <div class="post">
+            <img src="images/asset.png" alt="">
+            <h4>5. Threat Intelligence Integration:</h4>
+            <ul>
+                <li>AITSAD taps into threat intelligence platforms to stay updated on the latest cybersecurity threats and vulnerabilities.</li>
+                <li>Analyze and prioritize threat intelligence data, ensuring a dynamic response to emerging risks.</li>
+            </ul>
+        </div>
+        <div class="post">
+            <img src="images/incident.jpg" alt="">
+            <h4>6. Security Incident Response:</h4>
+            <ul>
+                <li>Automated incident response, allowing for swift actions based on predefined playbooks.</li>
+                <li>Models enhance incident response by learning from past incidents, improving the efficiency and accuracy of future responses.</li>
+            </ul>
+        </div>
+        <div class="post">
+            <img src="images/cap.png" alt="">
+            <h4>7. Adaptive Access Control:</h4>
+            <ul>
+                <li>AITSAD employs access control mechanisms to dynamically adjust permissions based on user behavior and risk assessments.</li>
+                <li>Models continuously refine access control policies, adapting to changes in user roles and potential security risks.</li>
+            </ul>
+        </div>
+        <div class="post">
+            <img src="images/image1.jpg" alt="">
+            <h4>8. Anomaly Detection and Prevention:</h4>
+            <ul>
+                <li>AITSAD utilizes real-time anomaly detection in network traffic, system logs, and user activities.</li>
+                <li>Improve anomaly detection accuracy by learning from historical data and adjusting thresholds based on evolving norms.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- scroll button -->
+<a class="gotopbtn" href="#"><i class="fa fa-arrow-up"></i></a>
+
+    <div class="copyright">
+        <p>Copyright @2024 All rights reserved | </p>
+
+<script>
+    $('#menu-btn').click(function(){
+            $(' nav .navigation ul').addClass('active')
+    });
+    $('#menu-close').click(function(){
+            $(' nav .navigation ul').removeClass('active')
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+
+/* Container styles */
+.container {
+   display: flex;
+   height: 100vh;
+   background-color: #5d9252;
+   position: relative;
+}
+
+.container .content {
+   flex: 1;
+   padding: 0 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left: 200px;
+}
+
+.container .content h3 {
+   font-size: 30px;
+   color: #26723f;
+   margin-bottom: 20px;
+}
+
+.container .content h3 span {
+   background: rgb(146, 121, 40);
+   color: #51a56a;
+   border-radius: 5px;
+   padding: 0 15px;
+}
+
+.container .content h1 {
+   font-size: 50px;
+   color: #209c54;
+   margin-bottom: 20px;
+}
+
+.container .content h1 span {
+   color: rgb(72, 134, 69);
+}
+
+ /* Navigation styles */
+.container .nav {
+   width: 200px;
+   background-color: #7dc98a;
+   position: fixed;
+   top: 1;
+   left: 0;
+   height: 100%;
+}
+
+.container .nav ul {
+   list-style-type: none;
+   padding: 40px;
+}
+
+.container .nav ul li {
+   padding: 15px;
+   border-bottom: 1px solid #5aa35a;
+}
+
+.container .nav ul li a {
+   display: block;
+   color: #385831;
+   font-size: 20px;
+   padding: 5px 10px;
+}
+
+.container .nav ul li a:hover {
+   background-color: #90c580;
+}
+
+ /* Profile icon styles */
+.container .profile-icon {
+   width: 52px;
+   height: 55px;
+   background-color: #93d48d;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   position: absolute;
+   top: 10px;
+   left: 20px;
+   z-index: 1;
+}
+
+.container .profile-icon i {
+   font-size: 30px;
+   color: rgb(129, 161, 99);
+}
+
+.container .content .btn{
+   display: inline-block;
+   padding:10px 30px;
+   font-size: 20px;
+   background: #333;
+   color:#72a168;
+   margin:0 5px;
+   text-transform: capitalize;
+}
+
+.container .content .btn:hover{
+   background: rgb(86, 122, 63);
+}
+
+.form-container{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 60px;
+   background: #4d7241;
+}
+
+.form-container form{
+   padding:20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   background: #558850;
+   text-align: center;
+   width: 500px;
+}
+
+.form-container form h3{
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color:#333;
+}
+
+.form-container form input,
+.form-container form select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: #b39c53;
+   border-radius: 5px;
+}
+
+.form-container form select option{
+   background: #8b9438;
+}
+
+.form-container form .form-btn{
+   background: #fbd0d9;
+   color:rgb(173, 135, 64);
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+   background: crimson;
+   color:#fff;
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color:#333;
+}
+
+.form-container form p a{
+   color:crimson;
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: crimson;
+   color:#fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
+
+.form-container form .success-msg{
+   margin:10px 0;
+   display: block;
+   background: green;
+   color:#fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
+
+.forgot-password{
+   display: block;
+   margin-top: 10px;
+   font-size: 16px;
+   color: #333;
+   text-decoration: none;
+}
+
+
+.password-input {
+   position: relative;
+   margin-bottom: 16px;
+}
+
+.password-input input {
+   padding-right: 50px;
+}
+
+.show-hide-btn {
+   position: absolute;
+   top: 50%;
+   right: 10px;
+   transform: translateY(-50%);
+   background: none;
+   border: none;
+   cursor: pointer;
+   outline: none;
+}
+
+.show-hide-btn i {
+   font-size: 20px;
+   color: #ef7b7b;
+   transition: .3s;
+}

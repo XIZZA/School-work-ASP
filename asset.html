@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Management System</title>
+    <link rel="stylesheet" href="asset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <img src="images/logo.JPG" alt=""> 
+        <div class="navigation">
+        <ul>
+            <i id="menu-close" class="fa fa-times"></i>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div> 
+    </nav><br><br><br><br><br><br>
+    <div class="container">
+        <h1>Asset Management System</h1>
+        <form id="assetForm" action="asset.php" method="POST">
+            <label for="assetName">Asset Name:</label>
+            <input type="text" id="assetName" name="assetName" required><br>
+
+            <label for="riskRating">Risk Rating:</label>
+            <input type="text" id="riskRating" name="riskRating" required><br>
+
+            <label for="assetDescription">Asset Description:</label>
+            <textarea id="assetDescription" name="assetDescription" required></textarea><br>
+
+            <label for="importance">Importance:</label>
+            <input type="number" id="importance" name="importance" required min="9" max="99"><br>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+
+        <h2>Retrieve Asset Information</h2>
+        <button id="retrieveBtn">Retrieve Data</button>
+        <div id="assetInfo"></div>
+    </div>
+
+    <script src="asset.js"></script>
+</body>
+</html>

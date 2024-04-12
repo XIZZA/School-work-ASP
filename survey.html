@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>AITSAD Survey</title>
+   
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/> 
+   
+   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+   <title>Survey Form</title>
+</head>
+<body>
+
+
+   <section id="survey-home">
+      <img src="images/logo.JPG" alt=""> 
+      <h2>Survey Form</h2>
+      <p>Thank You for taking the time to fill in this form to help us understand you better and therefore guide in your journey.
+      </p>
+      </section>
+   
+   <section id="survey-container">
+   <div class="heading">
+      <h1 id="head">AITSAD survey form</h1>
+      <h2 id="subheading">Thank you for taking time to fill in this form </h2>
+   </div>
+
+   <form method="POST" action="handle_form_submission.php" onsubmit="showPopup()">
+      <div id="content1">
+         <style>
+            .popup {
+               position: fixed;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               background-color: #50b461;
+               border: 1px solid #422e2e;
+               padding: 20px;
+               box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+               z-index: 999;
+            }
+      </style>
+
+         <label>Name</label><br>
+         <input type="name" name="name" placeholder="Enter your name" class="box"><br>
+         <label>Email</label><br>
+         <input type="email" name="email" placeholder="Enter your email" class="box"><br>
+
+         <label>User Type</label><br>
+      
+      <div id="option1">
+         <select>
+            <option name="Select Your User Type">Select Type</option>
+            <option value="Company">Company</option>
+            <option value="Administrator">Administrator</option>
+         </select>
+      </div>
+      <br><br>
+      
+		<label>Which option describes your Company Type?</label><br>
+		<div id="option1">
+			<select>
+				<option name="Select your role">Select Your Company</option>
+				<option value="Limited Liability company">Limited Liability company</option>
+				<option value="Sole proprietorship">Sole proprietorship</option>
+				<option value="Partnership">Partnership</option>
+				<option value="Nonprofit">Nonprofit</option>
+				<option value="Corporation">Corporation</option>
+            <option value="Private Company">Private Companies</option>
+            <option value="Unlimited Company">Unlimited Company</option>
+            <option value="Subsidiary Company">Subsidiary Company</option>
+            <option value="Listed Company">Listed Company</option>
+            <option value="Charitable Company">Charitable Company</option>
+            <option value="Registered Company">Private Companies</option>
+			</select>
+		</div>
+      <br>
+      <label>
+			Please check at least two (2) of the following statements that apply to you most:
+		</label><br><br>
+		<div id="content2">
+			<input type="checkbox" name="checkbox" class="larger"><label>We have a formal process in place to regularly update and patch our software and systems to address known vulnerabilities.</label><br><br>
+			<input type="checkbox" name="checkbox" class="larger"><label>We occasionally update software and systems, but it is not a formalized process.</label><br><br>
+			<input type="checkbox" name="checkbox" class="larger"><label>We regularly conduct security risk assessments and audits to identify potential vulnerabilities and assess our overall security posture</label><br><br>
+			<input type="checkbox" name="checkbox" class="larger"><label>We have conducted security risk assessments or audits in the past, but they are not performed on a regular basis.</label><br><br>
+			<input type="checkbox" name="checkbox" class="larger"><label>We provide regular cybersecurity training and awareness programs for employees to educate them about security best practices and how to identify potential threats.</label><br><br>
+			<input type="checkbox" name="checkbox" class="larger"><label>We do not have formal cybersecurity training programs for employees.</label><br><br>
+			<input type="checkbox" name="checkbox" class="larger"><label>We have robust network and endpoint security solutions (e.g., firewalls, antivirus software, intrusion detection/prevention systems) in place to protect against cyber threats</label><br><br>
+         <input type="checkbox" name="checkbox" class="larger"><label>We have some basic security measures in place, but they may not be comprehensive.</label><br><br>
+         <input type="checkbox" name="checkbox" class="larger"><label>We have a data backup and disaster recovery plan in place to ensure the availability and integrity of our data in the event of a cyber incident or disaster..</label><br><br>
+         <input type="checkbox" name="checkbox" class="larger"><label>We do not have a formal data backup and disaster recovery plan.</label><br><br>
+         <input type="checkbox" name="checkbox" class="larger"><label>We have documented incident response and breach notification procedures to effectively respond to security incidents and notify relevant stakeholders.</label><br><br>
+         <input type="checkbox" name="checkbox" class="larger"><label>We do not have formal incident response or breach notification procedures in place.</label><br><br>
+		</div>
+      <br>
+         <label>Please tell us about your Organization:</label><br><br>
+		<textarea placeholder="Description"></textarea><br><br>
+		<label>
+			How did you find out about AITSAD</label><br>
+		<div id="option1" >
+			<select>
+				<option name="Select and option">Click to select.</option>
+				<option value="Advertisement">Advertisement</option>
+				<option value="Internet">Internet</option>
+				<option value="Referral">Referral</option>
+				<option value="Other">Other</option>
+			</select>
+         </div>
+         <br>
+
+         <label id="head2">What would you like to see improved in terms of Cybersecurity Awareness and Preparedness in your ompany? (Check all that apply)</label><br><br>
+         <div id="content2">
+         <input type="checkbox" name="checkbox" class="larger"><label>Regular cybersecurity training sessions for all employees to increase awareness of cyber threats and best practices.</label><br><br>
+         <input type="checkbox" name="checkbox" class="larger"><label>Enhanced employee education on how to identify phishing emails and other social engineering attacks.</label><br><br>
+         <input type="checkbox" name="checkbox" class="larger"><label>Implementation of multi-factor authentication (MFA) for accessing sensitive systems and data.</label><br><br>
+         <input type="checkbox" name="checkbox" class="larger"><label>Improved incident response procedures and practices to handle security incidents effectively.</label><br><br>
+         <input type="checkbox" name="checkbox" class="larger"><label>Strengthening of network and endpoint security measures, such as firewalls and antivirus software.</label><br><br>
+         <input type="checkbox" name="checkbox" class="larger"><label>Establishment of clear policies and guidelines for handling sensitive data and protecting against data breaches.</label><br><br>
+         <input type="checkbox" name="checkbox" class="larger"><label>Enhanced collaboration and communication between IT/security teams and other departments regarding cybersecurity issues.</label><br><br><br>
+      </div>
+      <button type="submit">Submit</button>
+      </div>
+   </form>
+   <div id="popup" class="popup" style="display: none;">
+      <p>Thank you for submitting your information!</p>
+      <button id="myButton" onclick="hidePopup()">Close</button>
+   </div>
+
+      <script>
+            function showPopup() {
+               event.preventDefault();
+               document.getElementById("popup").style.display = "block";
+            }
+
+            function hidePopup() {
+               document.getElementById("popup").style.display = "none";
+            }
+      </script>
+   </section>
+
+   <!-- scroll button -->
+   <a class="gotopbtn" href="#"><i class="fa fa-arrow-up"></i></a>
+
+   <!-- footer -->
+
+   <footer>
+      <div class="footer-col">
+         <li><a href="blog.html"></a>Services</li>
+         <li>Professionals</li>
+         <li><a href="contact.html"></a>Contacts</li>
+      </div>
+
+      <div class="copyright">
+         <p>Copyright @2024 All rights reserved | This template is made by AITSAD KENYA</p>
+   </footer>
+
+   <script>
+      $('#menu-btn').click(function(){
+            $(' nav .navigation ul').addClass('active')
+      });
+      $('#menu-close').click(function(){
+            $(' nav .navigation ul').removeClass('active')
+      });
+   </script>
+   <script src="submit.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Information Form</title>
+    <link rel="stylesheet" href="incident.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <img src="images/logo.JPG" alt=""> 
+        <div class="navigation">
+        <ul>
+            <i id="menu-close" class="fa fa-times"></i>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div> 
+    </nav><br><br><br><br><br><br>
+
+    <h2>Incident Information Form</h2>
+    <form action="incident.php" method="POST">
+        <label for="identification">Identification:</label><br>
+        <textarea id="identification" name="identification" required></textarea><br>
+
+        <label for="containment">Containment:</label><br>
+        <textarea id="containment" name="containment" required></textarea><br>
+
+        <label for="documentation">Documentation:</label><br>
+        <textarea id="documentation" name="documentation" required></textarea><br>
+
+        <label for="analysis">Analysis:</label><br>
+        <textarea id="analysis" name="analysis" required></textarea><br>
+
+        <label for="impact_assessment">Impact Assessment:</label><br>
+        <textarea id="impact_assessment" name="impact_assessment" required></textarea><br>
+
+        <label for="response">Response:</label><br>
+        <textarea id="response" name="response" required></textarea><br>
+
+        <label for="lessons_learned">Lessons Learned:</label><br>
+        <textarea id="lessons_learned" name="lessons_learned" required></textarea><br>
+
+        <label for="reporting">Reporting:</label><br>
+        <textarea id="reporting" name="reporting" required></textarea><br>
+
+        <label for="follow_up">Follow-up:</label><br>
+        <textarea id="follow_up" name="follow_up" required></textarea><br>
+
+        <label for="continuous_improvement">Continuous Improvement:</label><br>
+        <textarea id="continuous_improvement" name="continuous_improvement" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1>Retrieve Incident Data</h1>
+    <form action="incident.php" method="GET">
+        <label for="incident_id">Incident ID:</label>
+        <input type="text" id="incident_id" name="incident_id">
+        <input type="submit" value="Retrieve Data">
+    </form>
+</body>
+
+</html>

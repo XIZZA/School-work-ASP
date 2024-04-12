@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AITSAD KENYA</title>
+<link rel="stylesheet" href="try.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSGFpoO/ufreqqF6MVu4JdG7PhIxZlW8sSJv43gkdSHlua9DmM/" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-V6Mq1DNDt8p1luIX1JAqV3B3OumAgN86lKq6ph6TbJwMdIS6ndz49WP/LK3oDOL forgive me" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+<img src="images/logo.JPG" alt=""> 
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="blog.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="auth">
+    <a href="login_form.php" class="btn">Log In</a>
+    <a href="register_form.php" class="btn">Sign Up</a>
+    </div>
+</header>
+
+<div class="hero">
+<h1>Welcome to AITSAD Cybersec. AITSAD provides a comprehensive solution to the complexities of IT security architecture.
+    By automating key processes, AITSAD enables organizations to proactively and reactively align their business strategies with robust information security.
+    The platform analyzes an organization's IT environment, generates customized security blueprints, identifies potential threats,
+    prioritizes risks, recommends mitigation strategies, and continuously monitors the IT environment for optimal security posture.</h1>
+</div>
+<br><br>
+<section class="main-content">
+    <div class="container">
+    <div class="plan">
+        <img src="images/bcp.jpg" alt="Business Continuity Plan">
+        <div class="plan-info">
+        <h2>Business Continuity Plan</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula magna. Sed ut aliquam justo.</p>
+        </div>
+    </div>
+
+    <div class="plan">
+        <img src="images/irp.png" alt="Incident Response Plan">
+        <div class="plan-info">
+        <h2>Incident Response Plan</h2>
+        <p>
+            Identifying risks<br>
+            Developing procedures<br>
+            Putting the plan in writing
+        </p>
+        </div>
+    </div>
+
+    <div class="plan">
+        <img src="images/drp.jpg" alt="Disaster Response Plan">
+        <div class="plan-info">
+        <h2>Disaster Response Plan</h2>
+        <p>DRP stands for Disaster Recovery Plan. It is a documented, structured approach that outlines how an organization will respond to and recover from a disaster or disruptive event that affects its IT infrastructure, systems, and data.</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+<main>
+    <section class="feature">
+        <h2>Neural based detection</h2>
+        <p>Unique neural network family based on the best proprietary detection practices, capable of detecting up to 90% of violations like a highly skilled professional.</p>
+    </section>
+    <section class="feature">
+        <h2>Auto attribution</h2>
+        <p>Algorithmic correlation of associated resources and entities for attributing and eliminating scam groups to prevent further attack escalation.</p>
+    </section>
+    </main>
+    
+    <div class="carousel">
+        <div class="carousel-section active" style="background-color: rgb(61, 128, 61);">
+        <h2>What AITSAD Does:</h2>
+        <p>AITSAD (Automated IT Security Architecture and Design) is an innovative software solution that revolutionizes cybersecurity by automating complex security architecture and design processes.</p>
+        </div>
+        <div class="carousel-section" style="background-color: rgb(183, 216, 230);">
+        <h2>Dynamic Risk Assessment:</h2>
+        <p>Utilizes advanced algorithms and artificial intelligence to dynamically assess and adapt security measures based on evolving cyber threats.</p>
+        </div>
+        <div class="carousel-section" style="background-color: rgb(148, 114, 102);">
+        <h2>Real-time Threat Detection:</h2>
+        <p>Monitors network activity in real-time to detect and respond to potential security breaches and cyber attacks.</p>
+        </div>
+        <div class="carousel-section" style="background-color: lightgrey;">
+        <h2>Adaptive Security Policies:</h2>
+        <p>Implements adaptive security policies that adjust to changing threat landscapes and organizational needs.</p>
+        </div>
+        <div class="carousel-section" style="background-color: lightgoldenrodyellow;">
+        <h2>Automated Incident Response:</h2>
+        <p>Streamlines incident response processes by automating the detection, analysis, and remediation of security incidents.</p>
+        </div>
+        <div class="carousel-section" style="background-color: lavender;">
+        <h2>Comprehensive Reporting:</h2>
+        <p>Generates comprehensive reports and analytics to provide insights into security posture, vulnerabilities, and risk mitigation strategies.</p>
+        </div>
+        
+        <div class="controls prev" onclick="prevSlide()">&#10094;</div>
+        <div class="controls next" onclick="nextSlide()">&#10095;</div>
+    </div>
+
+<footer>
+    <div class="footer-links">
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#faq">FAQs</a>
+    <a href="blog.html">Blog</a>
+    </div>
+    <form method="POST" action="process_subscription.php">
+        <input type="submit" value="Subscribe">
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+        <label for="email">Join our mailing list:</label><br>    
+    </form>
+</footer>
+
+<script src="try.js"></script>
+</body>
+</html>

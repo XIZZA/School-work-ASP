@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AITSAD KENYA</title>
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+   </head>
+
+   <body>
+   <!-- Navigation -->
+
+<nav id="navbar">
+   <img src="images/logo.JPG" alt=""> 
+   <div class="navigation">
+      <i id="menu-close" class="fa fa-times"></i>
+      <ul>
+         <li><a href="aitsad.html">About</a></li>
+         <li><a href="blog.html">Services</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img id="menu-btn" src="images/download.jpg" alt="">
+   </div>
+</nav>
+
+<!-- Home -->
+
+<section id="home">
+   <h2>Welcome to AITSAD KENYA</h2>
+   <p>Start your Journey with us. AITSAD (Automated IT Security Architecture and Design) is a cutting-edge software solution designed to revolutionize cybersecurity. It automates the intricate processes of security architecture and design, leveraging advanced algorithms and artificial intelligence to dynamically assess, adapt, and fortify an organization's digital infrastructure against cyber threats.</p>
+   <div class="btn">
+      <a class="yellow" href="survey.html">Help us understand your company better </a>
+   </div>
+</section>
+
+<!-- features -->
+
+<section id="features">
+   <h1>Features</h1>
+   <p>Some AITSAD Features</p>
+   <div class="fea-base">
+      <div class="fea-box">
+         <i class="fa fa-book"></i>
+         <h3>Resources</h3>
+         <p>AITSAD KENYA deploys resources that will help our customers understand how to go about securing their Information Technology infrastructure.</p>
+      </div>
+      <div class="fea-box">
+         <i class="fa fa-user-tie"></i>
+         <h3>Professionals</h3>
+         <p>Connect with our industry proven professionals</p>
+      </div>
+      <div class="fea-box">
+         <i class="fa fa-file"></i>
+         <h3>Services</h3>
+         <p>AITSAD KENYA gets you an in-depth understanding of the different services offered aiming to ensure premium customer service</p>
+      </div>
+   </div>
+</section>
+
+<!-- scroll button -->
+<a class="gotopbtn" href="#"><i class="fa fa-arrow-up"></i></a>
+
+<!-- footer -->
+
+<footer>
+   <div class="footer-col">
+      <h3>Home</h3>
+      <ul>
+         <li><a href="blog.html"></a>Services</li>
+         <li><a href="contact.html"></a>Contacts</li>
+         <li><a href="aitsad.html"></a>Trusted By</li>
+      </ul>
+   </div>
+
+   <div class="copyright">
+      <p>Copyright @2024 All rights reserved | This template is made by AITSAD KENYA</p>
+</div>
+
+<script>
+   $('#menu-btn').click(function(){
+         $('.navigation ul').addClass('active')
+   });
+   $('#menu-close').click(function(){
+         $('.navigation ul').removeClass('active')
+   });
+</script>
+
+</body>
+</html>
